@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/thedeeno/web-component-tester-istanbul",
   "dependencies": {
+    "content-type": "^1.0.2",
     "html-script-hook": "^0.9.1",
     "istanbul": "^0.3.2",
     "istanbul-threshold-checker": "^0.1.0",
