@@ -1,7 +1,7 @@
-Web-Component-Tester-Istanbul
+# wct-istanbul
 =============================
 
-Istanbul coverage plugin for web-component-tester.
+A fork of [web-component-tester-istanbul](https://github.com/thedeeno/web-component-tester-istanbul) Istanbul coverage plugin for [t2ym/web-component-tester#wct6-plugin](https://github.com/t2ym/web-component-tester/tree/wct6-plugin).
 
 Use this plugin to collect and report test coverage (via istanbul) for
 your project on each test run.
@@ -9,7 +9,17 @@ your project on each test run.
 ## Installation
 
 ```sh
-npm install web-component-tester-istanbul --saveDev
+npm install wct-istanbul --saveDev
+```
+
+### Notes
+- The module must be installed with [t2ym/web-component-tester#wct6-plugin](https://github.com/t2ym/web-component-tester/tree/wct6-plugin)
+```sh
+npm install t2ym/web-component-tester#wct6-plugin
+```
+- The dedicated fork [t2ym/polymer-cli#wct6-plugin](https://github.com/t2ym/polymer-cli/tree/wct6-plugin) must be used with the module
+```sh
+npm install -g t2ym/polymer-cli#wct6-plugin
 ```
 
 ## Basic Usage
