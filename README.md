@@ -21,6 +21,9 @@ npm install --save-dev @t2ym/web-component-tester
 ```sh
 npm install -g @t2ym/polymer-cli
 ```
+- The same [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries as [nyc v11.0.3](https://github.com/istanbuljs/nyc) are used since wct-istanbul 0.12.0.
+- async/await support with [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries
+- Only global coverage thresholds are effective since wct-istanbul 0.12.0.
 
 ## Basic Usage
 

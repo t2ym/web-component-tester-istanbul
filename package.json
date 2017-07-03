@@ -1,6 +1,6 @@
 {
   "name": "wct-istanbul",
-  "version": "0.11.2",
+  "version": "0.12.0",
   "description": "Instanbul coverage reporting for projects being tested by web-component-tester",
   "main": "lib/plugin.js",
   "scripts": {
@@ -25,8 +25,12 @@
   "dependencies": {
     "content-type": "^1.0.2",
     "html-script-hook": "^1.0.0",
-    "istanbul": "^0.4.5",
-    "istanbul-threshold-checker": "^0.2.1",
+    "istanbul-lib-coverage": "^1.1.1",
+    "istanbul-lib-hook": "^1.0.7",
+    "istanbul-lib-instrument": "^1.7.3",
+    "istanbul-lib-report": "^1.1.1",
+    "istanbul-lib-source-maps": "^1.2.1",
+    "istanbul-reports": "^1.1.1",
     "lodash": "^4.17.4",
     "minimatch": "^3.0.4",
     "parseurl": "^1.3.0",
