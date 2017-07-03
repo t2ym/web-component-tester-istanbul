@@ -1,6 +1,6 @@
 {
   "name": "wct-istanbul",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "description": "Instanbul coverage reporting for projects being tested by web-component-tester",
   "main": "lib/plugin.js",
   "scripts": {
