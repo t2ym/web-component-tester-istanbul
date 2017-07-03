@@ -24,7 +24,7 @@
   "homepage": "https://github.com/t2ym/web-component-tester-istanbul/tree/wct-istanbul",
   "dependencies": {
     "content-type": "^1.0.2",
-    "html-script-hook": "^0.9.1",
+    "html-script-hook": "^1.0.0",
     "istanbul": "^0.4.5",
     "istanbul-threshold-checker": "^0.2.1",
     "lodash": "^2.4.1",
