@@ -21,6 +21,8 @@ bower install --save-dev t2ym/web-component-tester
 - The dedicated fork [@t2ym/polymer-cli](https://github.com/t2ym/polymer-cli/tree/wct6-plugin) must be used with the module
 ```sh
 npm install -g @t2ym/polymer-cli
+# for polymer test
+npm install -g wct-istanbul
 ```
 - The same [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries as [nyc v11.0.3](https://github.com/istanbuljs/nyc) are used since wct-istanbul 0.12.0.
 - async/await support with [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries
