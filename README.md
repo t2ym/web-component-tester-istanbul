@@ -16,6 +16,7 @@ npm install --save-dev wct-istanbul
 - The module must be installed with [@t2ym/web-component-tester](https://github.com/t2ym/web-component-tester/tree/wct6-plugin-scoped)
 ```sh
 npm install --save-dev @t2ym/web-component-tester
+bower install --save-dev t2ym/web-component-tester
 ```
 - The dedicated fork [@t2ym/polymer-cli](https://github.com/t2ym/polymer-cli/tree/wct6-plugin) must be used with the module
 ```sh
