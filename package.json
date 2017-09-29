@@ -1,6 +1,6 @@
 {
   "name": "wct-istanbul",
-  "version": "0.12.3",
+  "version": "0.12.4",
   "description": "Instanbul coverage reporting for projects being tested by web-component-tester",
   "main": "lib/plugin.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "lodash": "^4.17.4",
     "minimatch": "^3.0.4",
     "parseurl": "^1.3.0",
-    "polyserve": "github:t2ym/polyserve#0.19.1-istanbul.2"
+    "polyserve": "github:t2ym/polyserve#0.19.1-istanbul.3"
   },
   "wct-plugin": {
     "cli-options": {
