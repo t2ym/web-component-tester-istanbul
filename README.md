@@ -1,10 +1,38 @@
 # wct-istanbul
 =============================
 
-A fork of [web-component-tester-istanbul](https://github.com/thedeeno/web-component-tester-istanbul) Istanbul coverage plugin for [@t2ym/web-component-tester](https://github.com/t2ym/web-component-tester/tree/wct6-plugin-scoped).
+A fork of [web-component-tester-istanbul](https://github.com/thedeeno/web-component-tester-istanbul) Istanbul coverage plugin for [web-component-tester@^6.6.0](https://www.npmjs.com/package/web-component-tester) and [@t2ym/web-component-tester](https://github.com/t2ym/web-component-tester/tree/wct6-plugin-scoped).
+
+## Compatibility Table
+
+|                | web-component-tester@^6.6.0 | @t2ym/web-component-tester@^6.0.2 |
+|:--------------:|:---------------------------:|:---------------------------------:|
+| wct-istanbul   | ^0.13.0                     | ^0.12.4 - ^0.13.0                 |
+| polymer-cli    | ^1.7.0                      | @t2ym/polymer-cli@^1.3.2          |
+| wct-browser-legacy | ✅ `(*1)`               | ✅ `(*1)`                        |
+| browser.js     | ✅ `(*1)`                | t2ym/web-component-tester#^6.0.2 `(*1)` |
+| local browsers | ✅                          | ✅                                |
+| Sauce Labs     | Small coverage only `(*1)`    | ✅ `(*1)`                       |
+| import.meta    | - `(*2)`                      | - `(*2)`                        |
+
+### Notes on Compatibility Table
+- `(*1)` - Sauce Labs Compatibility
+  - Squid proxies in Sauce Labs do not pass large socket.io traffic data and thus drop large coverage data
+  - `wct-istanbul` + `@t2ym/web-component-tester@^6.0.2` support chopping and combining of large coverage data to pass the Sauce Labs proxies
+    - Make sure `browser.js` from `@t2ym/web-component-tester@^6.0.2` or bower `t2ym/web-component-tester#^6.0.2` is used
+- `(*2)` - `import.meta` Support
+  - [`istanbul-lib-instrument@1.10.1`](https://www.npmjs.com/package/istanbul-lib-instrument) does not support `import.meta` syntax
+  - Workaround: Pre-instrumentation by `@babel/cli@^7.0.0-beta.46` with `@babel/plugin-syntax-import-meta` and `babel-plugin-istanbul`
+    - `babel --plugins @babel/plugin-syntax-import-meta,babel-plugin-istanbul target.js`
+    - Omit targets from `include` directive in `wct.conf.json`
 
 Use this plugin to collect and report test coverage (via istanbul) for
 your project on each test run.
+
+### Common Notes
+- The same [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries as [nyc v11.0.3](https://github.com/istanbuljs/nyc) are used since wct-istanbul 0.12.0.
+- async/await support with [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries
+- Only global coverage thresholds are effective since wct-istanbul 0.12.0.
 
 ## Installation
 
@@ -12,21 +40,18 @@ your project on each test run.
 npm install --save-dev wct-istanbul
 ```
 
-### Notes
-- The module must be installed with [@t2ym/web-component-tester](https://github.com/t2ym/web-component-tester/tree/wct6-plugin-scoped)
+### Notes on `@t2ym/web-component-tester`
+- The module can be installed with [@t2ym/web-component-tester](https://github.com/t2ym/web-component-tester/tree/wct6-plugin-scoped)
 ```sh
 npm install --save-dev @t2ym/web-component-tester
 bower install --save-dev t2ym/web-component-tester
 ```
-- The dedicated fork [@t2ym/polymer-cli](https://github.com/t2ym/polymer-cli/tree/wct6-plugin) must be used with the module
+- The dedicated fork [@t2ym/polymer-cli](https://github.com/t2ym/polymer-cli/tree/wct6-plugin) can be used with the module
 ```sh
 npm install -g @t2ym/polymer-cli
 # for polymer test
 npm install -g wct-istanbul
 ```
-- The same [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries as [nyc v11.0.3](https://github.com/istanbuljs/nyc) are used since wct-istanbul 0.12.0.
-- async/await support with [IstanbulJS](https://github.com/istanbuljs/istanbuljs) libraries
-- Only global coverage thresholds are effective since wct-istanbul 0.12.0.
 
 ## Basic Usage
 
