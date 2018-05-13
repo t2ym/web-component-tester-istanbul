@@ -23,6 +23,13 @@
   },
   "homepage": "https://github.com/t2ym/web-component-tester-istanbul/tree/wct-istanbul",
   "dependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-syntax-async-generators": "^7.0.0-beta.46",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.46",
+    "@babel/plugin-syntax-import-meta": "^7.0.0-beta.46",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0-beta.46",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babylon": "^7.0.0-beta.46",
     "content-type": "^1.0.2",
     "html-script-hook": "^1.0.0",
     "istanbul-lib-coverage": "^1.1.1",
