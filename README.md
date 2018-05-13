@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/wct-istanbul.svg)](https://www.npmjs.com/package/wct-istanbul)
+
 # wct-istanbul
 
 A fork of [web-component-tester-istanbul](https://github.com/thedeeno/web-component-tester-istanbul) Istanbul coverage plugin for [web-component-tester@^6.6.0](https://www.npmjs.com/package/web-component-tester).
