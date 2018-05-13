@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/wct-istanbul.svg)](https://www.npmjs.com/package/wct-istanbul)
+[![npm version](https://badge.fury.io/js/wct-istanbul.svg)](https://badge.fury.io/js/wct-istanbul)
 
 # wct-istanbul
 
